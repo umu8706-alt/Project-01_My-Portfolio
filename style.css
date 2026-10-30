@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111111;
+    color: white;
+    font-family: Arial,  sans-serif;
+}
+header{
+    padding: 20px 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #ff4fa3;
+    font-size: 28px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #ff4fa3;
+    transition: 0.3s;
+}
+#home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.home-content h1{
+    font-size: 55px;
+    margin-bottom: 15px;  
+}
+.home-content h1 span{
+    color: #ff4fa3;
+}
+.home-content h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.home-content p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.home-content a{
+    display: inline-block;
+    background-color: #ff4fa3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+.home-image img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover; /* Resmi alanı dolduracak şekilde kırpar. */
+    border-radius: 50%;
+    border: 4px solid #ff4fa3;
+}
+
+#about{
+    min-height: 70vh;
+    padding: 100px 50px;   /*Ust-Alt 100px, sag-sol 50px*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-content{
+    max-width: 800px;   /*Max genislik*/
+    text-align: center;
+}
+.about-content h2{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.about-content h2 span{
+    color: #ff4fa3;
+}
+.about-content h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.8;  /*Satirlar arasindaki mesafeyi bellirler*/
+    color: #cccccc;
+}
+.about-image img{
+    width: 500px;
+    height: 500px;
+}
+#skills{
+    padding: 100px 50px;
+    text-align: center;
+}
+.skills-content h2{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.skills-content h2 span{
+    color: #ff4fa3;
+}
+.skills-container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;    /*Elemanlar sığmadığında alt satıra geçirir.*/
+    gap: 25px;
+}
+.skill-card{
+    background-color: #1c1c1c;
+    border: 1px solid #ff4fa3;
+    padding: 35px;
+    width: 220px;
+    border-radius: 15px;
+}
+.skill-card h3{
+    color: #ff4fa3;
+    font-size:25px;
+    margin-bottom: 15px;
+}
+.skill-card{
+    color: #cccccc;
+}
+
+#projects{
+    padding: 100px 50px;
+    text-align: center;
+}
+.projects-content h2{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.projects-content h2 span{
+    color: #ff4fa3;
+}
+.projects-container{
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.project-card{
+    background-color: #1c1c1c;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #ff4fa3;
+    transition: 0.3s;
+}
+.project-card:hover{
+    transform: translateY(-10px);  /*Kartı dikey yönde 10 piksel yukarı taşır.*/
+    box-shadow: 0 0 15px #ff4fa3;  /*Elemanın çevresinde gölge oluşturur.*/
+}
+.project-card h3{
+    color: #ff4fa3;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.project-card p{
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+.project-card a{
+    display: inline-block;
+    background-color: #ff4fa3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#contact{
+    min-height: 70vh;
+    padding: 100px 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.contact-content h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.contact-content h2 span{
+    color: #ff4fa3;
+}
+.contact-content p{
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 35px;
+}
+.contact-info{
+    margin-bottom: 30px;
+}
+.contact-info p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+.contact-content a{
+    display: inline-block;
+    background-color: #ff4fa3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.contact-content a:hover{
+    background-color: #e63287;
+    transform: translateY(-5px);
+}
+footer {
+    background-color: #1c1c1c;
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #ff4fa3;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+footer p:last-child {
+    color: #ff4fa3;
+}
+/*en son yazilan tagin regini degistirmek*/
+
+@media (max-width: 768px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+    }
+    .about-image img{
+        width: 400px;
+        height: 400px;
+        margin: 15px;
+        margin-left: 50px;
+    }
+    #skills{
+       flex-direction: column;
+    }
+}
